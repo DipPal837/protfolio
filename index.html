@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+
+<!--Heading Parts-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--BODY PART-->
+
+<body>
+    <header>
+        <nav>
+            <ul class="link">
+
+                <li class="nav"><a href="#home">Home</a></li>
+                <li class="nav"><a href="#about">About Me</a></li>
+                <li class="nav"> <a href="#skills">Skills</a></li>
+                <li class="nav"><a href="#projects">Projects</a></li>
+                <li class="nav"><a href="#resume">Resume</a></li>
+                <li class="nav"><a href="#contact-me">Contact Me</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!--SECTION PART-->
+    <center>
+        <section id="home">
+
+            <div class="home-text">
+
+                <p><h4 class="hello">Hello !</h4></p>
+                <p class="dip">I'm <span class="highlight">Dip Pal</span><br>
+                Full & MERN Stack Developer<br>From India</p>
+
+            </div>
+            <div class="home-image">
+                <img src="dip2.jpg" class="dip2-image" alt="Dip Pal">
+            </div>
+
+        </section>
+    </center>
+
+
+
+
+
+
+
+
+
+    <!---------------------------------------------About Part--------------------------------------------------------------------->
+
+    <section id="about" class="about-section">
+
+        <center>
+            <h2 class="about-me">About Me</h2>
+        </center>
+
+        <div class="about-container">
+            <div class="about-image">
+                <img src="dippal.jpg" alt="dip Pal">
+            </div>
+            <div class="about-content">
+                <p>Hi, I'm <strong>Dip Pal</strong> ,a passionate web developer with a strong foundation
+                    in front-end and back-end technologies.I specialize in building responsive,user-freindly websites
+                    and applications.</p>
+
+                <p>Currently pursuing my <strong>BCA at Supreme Institute Management And Technology</strong>,
+                    I enjoy turning complex problems into simple,elegent solutions.</p>
+                <table class="about-table">
+                    <tr>
+                        <th>Name : -</th>
+                        <td>Dip Pal</td>
+                    </tr>
+                    <tr>
+                        <th>Date Of Birth : -</th>
+                        <td>February 14,2006</td>
+                    </tr>
+                    <tr>
+                        <th>Address : -</th>
+                        <td>Kushodanga,Kalna,Purba Bardhaman,West Bengal</td>
+                    </tr>
+                    <tr>
+                        <th>PIN Code :-</th>
+                        <td>712512</td>
+                    </tr>
+                    <tr>
+                        <th>email : -</th>
+                        <td>dip49438@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Phone : -</th>
+                        <td>+91 9339355429</td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <!--SKILLS PART-->
+
+    <section id="skills">
+        <div class="s1">
+            <center>
+                <h2 class="skills">My Skills</h2>
+            </center>
+        </div>
+        <center>
+            <div class="skills-grid">
+                <div class="skill">
+                    <span>HTML5</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS3</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%;">82%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Python(OOPS)</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>MySQL</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>PHP</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>C Programming</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>protfolio</li>
+            <li>blog app</li>
+        </ul>
+    </section>
+
+    <section id="contact-me">
+        <center>
+            <h2 class="contact-box">Contact With Me</h2>
+        </center>
+        {% if success %}
+        <p class="success">Message sent successfully</p>
+        <center>
+            <form method="POST" action="/submit">
+                <div class="form1">
+                    <input type="text" name="name" placeholder="Your Name" required><br>
+                    <input type="number" name="number" placeholder="Your Number" required><br>
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <textarea name="message" placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </center>
+    </section>
+
+
+    <footer>
+        <p>&copy;2025 Dip pal.All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

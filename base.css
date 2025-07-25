@@ -1,0 +1,89 @@
+/* Base Styles */
+body {
+    font-size: 28px;
+    background-color: aqua;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.link {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(14, 32, 32);
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Nav Items */
+.link li {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .link li {
+        width: 100%;
+        text-align: right;
+        padding: 10px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    .link li {
+        padding: 8px 12px;
+    }
+}
+
+
+
+body{
+    font-size:28px;
+    background-color: aqua;
+}
+
+.link{
+    list-style-type:none;
+    width: 100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: rgb(14, 32, 32);
+    position:fixed;
+    right:0;
+    top:0;
+    display: flex;
+    justify-content: right;
+}
+li{
+    
+    color:white;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:none;
+    
+    
+}

@@ -1,0 +1,331 @@
+/*BODY PART*/
+body {
+    font-size: 28px;
+    background: black;
+    color: white;
+}
+
+
+/*NAVIGATION PART*/
+.link {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: right;
+
+}
+
+.nav {
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+li {
+    position: relative;
+}
+
+a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover,
+a.active {
+    color: orange;
+}
+
+
+/*section part*/
+section {
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+}
+
+/*home part*/
+
+.hello {
+    animation: glow 0.3s infinite alternate;
+    font-weight: bold;
+}
+
+@keyframes glow {
+    0% {
+        color: #00ff00;
+    }
+
+    100% {
+        color: red;
+    }
+}
+.highlight{
+    font-weight: bold;
+    color:orange;
+    
+}
+.dip{
+    font-size:50px;
+    font-weight: bold;
+
+
+}
+
+.home-text {
+    width: 50%;
+    text-align: left;
+    margin-left: 12%;
+    margin-top: 15%;
+
+}
+
+.home-image {
+    margin-left: 70%;
+    margin-top: -380px;
+}
+
+.dip2-image {
+    width: 350px;
+    border-radius: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ABOUT PART*/
+
+strong {
+    color: lawngreen;
+}
+
+.about-me {
+    border-style: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    width: 35%;
+    height: 60px;
+    color: #e2e8f0;
+
+}
+
+.about-section {
+    padding: 60px 20px;
+
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 425px;
+    height: auto;
+    border-radius: 10px;
+
+
+}
+
+.about-content {
+    flex: 1;
+    min-width: 280px;
+    border-radius: 10px;
+    border-style: none;
+    text-align: left;
+    font-size: 25PX;
+    color: #e2e8f0;
+}
+
+.about-table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-table th,
+.about-table td {
+    text-align: left;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.about-table th {
+    color: #93c5fd;
+    width: 160px;
+}
+
+.about-table td {
+    color: #e2e8f0;
+}
+
+.about-table tr:nth-child(odd) {
+    background-color: #334155;
+}
+
+.about-table tr:nth-child(even) {
+    background-color: #1e293b;
+}
+
+
+/*SKILLS PART*/
+.s1 {
+    padding-bottom: 50px;
+}
+
+.skills {
+    border-style: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    width: 35%;
+    height: 60px;
+
+
+}
+
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 20px;
+    width: 80%;
+    border-style: none;
+    padding: 30px 30px 30px 30px;
+    margin: 20px 20px 20px 30px;
+    box-shadow: 0 0 20px white;
+
+
+}
+
+.skill {
+    flex: 1 1 calc(50% - 20px);
+    text-align: left;
+
+
+}
+
+.skill span {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    width: 90%;
+
+}
+
+.progress {
+    background: orange;
+    height: 100%;
+    color: black;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    animation: load 2s ease-in-out;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill {
+        flex: 1 1 100%;
+    }
+}
+
+/*CONTACT FORM*/
+
+.contact-box {
+    border-style: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    width: 35%;
+    height: 60px;
+}
+
+.form1 {
+    border-style: none;
+    border-radius: 10px;
+    width: 40%;
+    border-style: none;
+    padding: 30px 30px 30px 30px;
+    margin: 20px 20px 20px 30px;
+    box-shadow: 0 0 20px white;
+}
+
+
+input,
+textarea {
+
+    outline: none;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px lightskyblue;
+    background-color: #333;
+    font-size: 24px;
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px lightskyblue;
+    width: 20%;
+    background-image: linear-gradient(blue, black);
+    color: white;
+    font-size: 17px;
+}
